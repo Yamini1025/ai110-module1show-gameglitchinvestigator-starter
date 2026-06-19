@@ -5,8 +5,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+The game had a simple UI with instructions to enter a number between 1 and 10. It also displayed how many attempts
+were left, with a text box and buttons to submit the user's guess and start a new game. It also had a toggle button to show hints. 
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  The hints were showing opposite to what they were supposed to show, and as I tried more attempts I noticed that the game ended before the last attempt.
 
 **Bug Reproduction Log**
 
@@ -14,10 +17,16 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+Guess of | Go HIGHER hint   |  Go LOWER hint  |     none
+20       |                  |                 |
 
+Switched | Reset game and   |  Continued with |   none
+to another |   attempts     |  same # attempts |
+difficulty
+
+Clicked   | Display updated  |  Did not change   |   none
+Submit    |  attempts        | attempts left #    |
+button
 ---
 
 ## 2. How did you use AI as a teammate?
